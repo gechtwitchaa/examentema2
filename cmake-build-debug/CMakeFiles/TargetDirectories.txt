@@ -1,4 +1,5 @@
 C:/Users/alber_wzgn3ys/Documents/GitHub/examentema2/cmake-build-debug/CMakeFiles/examentema2.dir
 C:/Users/alber_wzgn3ys/Documents/GitHub/examentema2/cmake-build-debug/CMakeFiles/estructuraestudianteC.dir
+C:/Users/alber_wzgn3ys/Documents/GitHub/examentema2/cmake-build-debug/CMakeFiles/estructuraestudiantecomparativa.dir
 C:/Users/alber_wzgn3ys/Documents/GitHub/examentema2/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/alber_wzgn3ys/Documents/GitHub/examentema2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

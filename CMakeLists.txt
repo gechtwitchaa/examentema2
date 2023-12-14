@@ -6,3 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(examentema2
         estructuraestudianteC++.cpp)
 add_executable(estructuraestudianteC estructuraestudianteC.cpp)
+add_executable(estructuraestudiantecomparativa estructuraestudiantecomparativa.cpp)
+add_executable(gestionmateriasC++ gestionmateriasC++.cpp)

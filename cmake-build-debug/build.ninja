@@ -106,6 +106,39 @@ build estructuraestudianteC.exe: CXX_EXECUTABLE_LINKER__estructuraestudianteC_De
   TARGET_IMPLIB = libestructuraestudianteC.dll.a
   TARGET_PDB = estructuraestudianteC.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target estructuraestudiantecomparativa
+
+
+#############################################
+# Order-only phony target for estructuraestudiantecomparativa
+
+build cmake_object_order_depends_target_estructuraestudiantecomparativa: phony || CMakeFiles/estructuraestudiantecomparativa.dir
+
+build CMakeFiles/estructuraestudiantecomparativa.dir/estructuraestudiantecomparativa.cpp.obj: CXX_COMPILER__estructuraestudiantecomparativa_unscanned_Debug C$:/Users/alber_wzgn3ys/Documents/GitHub/examentema2/estructuraestudiantecomparativa.cpp || cmake_object_order_depends_target_estructuraestudiantecomparativa
+  DEP_FILE = CMakeFiles\estructuraestudiantecomparativa.dir\estructuraestudiantecomparativa.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\estructuraestudiantecomparativa.dir
+  OBJECT_FILE_DIR = CMakeFiles\estructuraestudiantecomparativa.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target estructuraestudiantecomparativa
+
+
+#############################################
+# Link the executable estructuraestudiantecomparativa.exe
+
+build estructuraestudiantecomparativa.exe: CXX_EXECUTABLE_LINKER__estructuraestudiantecomparativa_Debug CMakeFiles/estructuraestudiantecomparativa.dir/estructuraestudiantecomparativa.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\estructuraestudiantecomparativa.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = estructuraestudiantecomparativa.exe
+  TARGET_IMPLIB = libestructuraestudiantecomparativa.dll.a
+  TARGET_PDB = estructuraestudiantecomparativa.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -134,6 +167,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build estructuraestudianteC: phony estructuraestudianteC.exe
 
+build estructuraestudiantecomparativa: phony estructuraestudiantecomparativa.exe
+
 build examentema2: phony examentema2.exe
 
 # =============================================================================
@@ -144,7 +179,7 @@ build examentema2: phony examentema2.exe
 #############################################
 # Folder: C:/Users/alber_wzgn3ys/Documents/GitHub/examentema2/cmake-build-debug
 
-build all: phony examentema2.exe estructuraestudianteC.exe
+build all: phony examentema2.exe estructuraestudianteC.exe estructuraestudiantecomparativa.exe
 
 # =============================================================================
 # Built-in targets
