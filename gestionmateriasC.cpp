@@ -25,3 +25,26 @@ void mostrarEstudiante(struct Estudiante estudiante) {
     }
     printf("\n");
 }
+
+// Función para agregar una materia al estudiante
+void agregarMateria(struct Estudiante *estudiante, const char *nuevaMateria) {
+    if (estudiante->cantidadMaterias < MAX_MATERIAS) {
+        strcpy(estudiante->materias[estudiante->cantidadMaterias], nuevaMateria);
+        estudiante->cantidadMaterias++;
+    } else {
+        printf("No se pueden agregar más materias\n");
+    }
+}
+
+// Función para eliminar una materia del estudiante
+void eliminarMateria(struct Estudiante *estudiante, const char *materiaAEliminar) {
+    for (int i = 0; i < estudiante->cantidadMaterias; ++i) {
+        if (strcmp(estudiante->materias[i], materiaAEliminar) == 0) {
+            for (int j = i; j < estudiante->cantidadMaterias - 1; ++j) {
+                strcpy(estudiante->materias[j], estudiante->materias[j + 1]);
+            }
+            estudiante->cantidadMaterias--;
+            break;
+        }
+    }
+}
