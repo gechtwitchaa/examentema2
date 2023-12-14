@@ -87,21 +87,7 @@ void registrarAsistencia(struct Estudiante *estudiante, const char *fecha, const
 }
 
 int main() {
-    // Crear un objeto de tipo Estudiante
+
     struct Estudiante estudiante1;
 
-    // Asignar valores a los campos del estudiante
-    strcpy(estudiante1.nombre, "Alberto");
-    estudiante1.edad = 18;
-    estudiante1.promedio = 8;
-    estudiante1.cantidadAsistencias = 0;
-
-    // Registrar asistencias del estudiante con manejo de excepciones simuladas
-    registrarAsistencia(&estudiante1, "2023-12-01", "Matemáticas", "asistió");
-    registrarAsistencia(&estudiante1, "23-12-2023", "Historia", "asistió"); // Formato de fecha incorrecto
-
-    // Mostrar la asistencia del estudiante
-    mostrarAsistencia(estudiante1);
-
-    return 0;
-}
+ 
