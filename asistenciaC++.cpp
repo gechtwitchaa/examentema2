@@ -9,5 +9,14 @@ using namespace std;
 struct Asistencia {
     string fecha;
     string materia;
-    string estado; // asistió, falta, tardanza
+    string estado;
 };
+
+
+struct Estudiante {
+    string nombre;
+    int edad;
+    float promedio;
+    vector<Asistencia> asistencias; 
+};
+
