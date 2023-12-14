@@ -27,3 +27,8 @@ int main() {
     estudiante1.promedio = 7;
 
 
+    
+    mostrarEstudiante(estudiante1);
+
+    return 0;
+}
