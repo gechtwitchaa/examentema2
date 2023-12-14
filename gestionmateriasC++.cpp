@@ -24,3 +24,8 @@ void mostrarEstudiante(const Estudiante& estudiante) {
     }
     cout << endl;
 }
+
+
+void agregarMateria(Estudiante& estudiante, const string& nuevaMateria) {
+    estudiante.materias.push_back(nuevaMateria);
+}
