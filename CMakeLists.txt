@@ -8,3 +8,4 @@ add_executable(examentema2
 add_executable(estructuraestudianteC estructuraestudianteC.cpp)
 add_executable(estructuraestudiantecomparativa estructuraestudiantecomparativa.cpp)
 add_executable(gestionmateriasC++ gestionmateriasC++.cpp)
+add_executable(gestionmateriasC gestionmateriasC.cpp)
