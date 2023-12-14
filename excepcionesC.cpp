@@ -90,4 +90,8 @@ int main() {
 
     struct Estudiante estudiante1;
 
- 
+
+    strcpy(estudiante1.nombre, "Alberto");
+    estudiante1.edad = 18;
+    estudiante1.promedio = 8;
+    estudiante1.cantidadAsistencias = 0;
