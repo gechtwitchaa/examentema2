@@ -21,3 +21,18 @@ public:
         return "Error: Materia no registrada";
     }
 };
+
+
+struct Asistencia {
+    string fecha;
+    string materia;
+    string estado; // asistió, falta, tardanza
+};
+
+
+struct Estudiante {
+    string nombre;
+    int edad;
+    float promedio;
+    vector<Asistencia> asistencias; // Vector de asistencias
+};
