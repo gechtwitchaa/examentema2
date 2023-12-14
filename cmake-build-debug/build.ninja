@@ -73,6 +73,39 @@ build examentema2.exe: CXX_EXECUTABLE_LINKER__examentema2_Debug CMakeFiles/exame
   TARGET_IMPLIB = libexamentema2.dll.a
   TARGET_PDB = examentema2.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target estructuraestudianteC
+
+
+#############################################
+# Order-only phony target for estructuraestudianteC
+
+build cmake_object_order_depends_target_estructuraestudianteC: phony || CMakeFiles/estructuraestudianteC.dir
+
+build CMakeFiles/estructuraestudianteC.dir/estructuraestudianteC.cpp.obj: CXX_COMPILER__estructuraestudianteC_unscanned_Debug C$:/Users/alber_wzgn3ys/Documents/GitHub/examentema2/estructuraestudianteC.cpp || cmake_object_order_depends_target_estructuraestudianteC
+  DEP_FILE = CMakeFiles\estructuraestudianteC.dir\estructuraestudianteC.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\estructuraestudianteC.dir
+  OBJECT_FILE_DIR = CMakeFiles\estructuraestudianteC.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target estructuraestudianteC
+
+
+#############################################
+# Link the executable estructuraestudianteC.exe
+
+build estructuraestudianteC.exe: CXX_EXECUTABLE_LINKER__estructuraestudianteC_Debug CMakeFiles/estructuraestudianteC.dir/estructuraestudianteC.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\estructuraestudianteC.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = estructuraestudianteC.exe
+  TARGET_IMPLIB = libestructuraestudianteC.dll.a
+  TARGET_PDB = estructuraestudianteC.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -99,6 +132,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build estructuraestudianteC: phony estructuraestudianteC.exe
+
 build examentema2: phony examentema2.exe
 
 # =============================================================================
@@ -109,7 +144,7 @@ build examentema2: phony examentema2.exe
 #############################################
 # Folder: C:/Users/alber_wzgn3ys/Documents/GitHub/examentema2/cmake-build-debug
 
-build all: phony examentema2.exe
+build all: phony examentema2.exe estructuraestudianteC.exe
 
 # =============================================================================
 # Built-in targets
