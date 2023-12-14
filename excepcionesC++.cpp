@@ -62,3 +62,10 @@ void registrarAsistencia(Estudiante& estudiante, const string& fecha, const stri
     Asistencia nuevaAsistencia = {fecha, materia, estado};
     estudiante.asistencias.push_back(nuevaAsistencia);
 }
+
+int main() {
+    Estudiante estudiante1;
+
+    estudiante1.nombre = "Alberto";
+    estudiante1.edad = 18;
+    estudiante1.promedio = 8;
