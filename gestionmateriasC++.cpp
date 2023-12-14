@@ -54,4 +54,8 @@ int main() {
     agregarMateria(estudiante1, "Física");
     agregarMateria(estudiante1, "Programación");
 
-   
+    // Mostrar la información del estudiante y sus materias
+    mostrarEstudiante(estudiante1);
+
+  
+
