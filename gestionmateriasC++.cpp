@@ -61,3 +61,8 @@ int main() {
     eliminarMateria(estudiante1, "Física");
 
   
+    mostrarEstudiante(estudiante1);
+
+    return 0;
+}
+
