@@ -26,3 +26,19 @@ void manejarExcepcion(Excepcion excepcion) {
             break;
     }
 }
+
+
+struct Asistencia {
+    char fecha[MAX_FECHA];
+    char materia[MAX_MATERIA];
+    char estado[MAX_NOMBRE]; // asistió, falta, tardanza
+};
+
+
+struct Estudiante {
+    char nombre[MAX_NOMBRE];
+    int edad;
+    float promedio;
+    struct Asistencia asistencias[MAX_ASISTENCIAS]; // Array de asistencias
+    int cantidadAsistencias;
+};
