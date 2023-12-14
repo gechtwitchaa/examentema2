@@ -29,3 +29,13 @@ void mostrarEstudiante(const Estudiante& estudiante) {
 void agregarMateria(Estudiante& estudiante, const string& nuevaMateria) {
     estudiante.materias.push_back(nuevaMateria);
 }
+
+
+void eliminarMateria(Estudiante& estudiante, const string& materiaAEliminar) {
+    for (auto it = estudiante.materias.begin(); it != estudiante.materias.end(); ++it) {
+        if (*it == materiaAEliminar) {
+            estudiante.materias.erase(it);
+            break;
+        }
+    }
+}
