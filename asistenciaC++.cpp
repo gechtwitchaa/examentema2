@@ -27,3 +27,9 @@ void mostrarAsistencia(const Estudiante& estudiante) {
     }
     cout << endl;
 }
+
+
+void registrarAsistencia(Estudiante& estudiante, const string& fecha, const string& materia, const string& estado) {
+    Asistencia nuevaAsistencia = {fecha, materia, estado};
+    estudiante.asistencias.push_back(nuevaAsistencia);
+}
