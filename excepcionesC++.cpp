@@ -5,3 +5,11 @@
 #include <algorithm>
 
 using namespace std;
+
+
+class FormatoFechaIncorrecto : public std::exception {
+public:
+    const char* what() const throw() {
+        return "Error: Formato de fecha incorrecto";
+    }
+};
