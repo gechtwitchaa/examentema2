@@ -59,4 +59,12 @@ int main() {
     estudiante1.promedio = 8;
     estudiante1.cantidadMaterias = 0;
 
+
+    agregarMateria(&estudiante1, "Matemáticas");
+    agregarMateria(&estudiante1, "Física");
+    agregarMateria(&estudiante1, "Programación");
+
+
+    mostrarEstudiante(estudiante1);
+
  
