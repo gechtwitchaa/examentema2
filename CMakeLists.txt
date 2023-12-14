@@ -10,3 +10,4 @@ add_executable(estructuraestudiantecomparativa estructuraestudiantecomparativa.c
 add_executable(gestionmateriasC++ gestionmateriasC++.cpp)
 add_executable(gestionmateriasC gestionmateriasC.cpp)
 add_executable(asistenciaC++ asistenciaC++.cpp)
+add_executable(asistenciaC asistenciaC.cpp)

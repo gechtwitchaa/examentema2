@@ -48,7 +48,7 @@ int main() {
     registrarAsistencia(estudiante1, "2023-12-02", "Física", "falta");
     registrarAsistencia(estudiante1, "2023-12-03", "Programación", "tardanza");
 
-    
+
     mostrarAsistencia(estudiante1);
 
     return 0;
