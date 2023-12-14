@@ -9,7 +9,7 @@ struct Estudiante {
     char nombre[MAX_NOMBRE];
     int edad;
     float promedio;
-    char materias[MAX_MATERIAS][MAX_NOMBRE]; // Array de cadenas para las materias
+    char materias[MAX_MATERIAS][MAX_NOMBRE];
     int cantidadMaterias;
 };
 
@@ -26,7 +26,7 @@ void mostrarEstudiante(struct Estudiante estudiante) {
     printf("\n");
 }
 
-// Función para agregar una materia al estudiante
+
 void agregarMateria(struct Estudiante *estudiante, const char *nuevaMateria) {
     if (estudiante->cantidadMaterias < MAX_MATERIAS) {
         strcpy(estudiante->materias[estudiante->cantidadMaterias], nuevaMateria);
@@ -36,7 +36,7 @@ void agregarMateria(struct Estudiante *estudiante, const char *nuevaMateria) {
     }
 }
 
-// Función para eliminar una materia del estudiante
+
 void eliminarMateria(struct Estudiante *estudiante, const char *materiaAEliminar) {
     for (int i = 0; i < estudiante->cantidadMaterias; ++i) {
         if (strcmp(estudiante->materias[i], materiaAEliminar) == 0) {
@@ -48,3 +48,15 @@ void eliminarMateria(struct Estudiante *estudiante, const char *materiaAEliminar
         }
     }
 }
+
+int main() {
+
+    struct Estudiante estudiante1;
+
+
+    strcpy(estudiante1.nombre, "Alberto");
+    estudiante1.edad = 18;
+    estudiante1.promedio = 8;
+    estudiante1.cantidadMaterias = 0;
+
+ 
