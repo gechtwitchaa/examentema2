@@ -95,3 +95,12 @@ int main() {
     estudiante1.edad = 18;
     estudiante1.promedio = 8;
     estudiante1.cantidadAsistencias = 0;
+
+
+    registrarAsistencia(&estudiante1, "2023-12-01", "Matemáticas", "asistió");
+    registrarAsistencia(&estudiante1, "23-12-2023", "Historia", "asistió"); // Formato de fecha incorrecto
+
+    mostrarAsistencia(estudiante1);
+
+    return 0;
+}
