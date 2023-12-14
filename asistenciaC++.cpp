@@ -43,8 +43,14 @@ int main() {
     estudiante1.edad = 18;
     estudiante1.promedio = 8;
 
-   
+
     registrarAsistencia(estudiante1, "2023-12-01", "Matemáticas", "asistió");
     registrarAsistencia(estudiante1, "2023-12-02", "Física", "falta");
     registrarAsistencia(estudiante1, "2023-12-03", "Programación", "tardanza");
+
+    
+    mostrarAsistencia(estudiante1);
+
+    return 0;
+}
 
