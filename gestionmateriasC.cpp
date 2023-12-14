@@ -67,4 +67,11 @@ int main() {
 
     mostrarEstudiante(estudiante1);
 
- 
+
+    eliminarMateria(&estudiante1, "Física");
+
+  
+    mostrarEstudiante(estudiante1);
+
+    return 0;
+}
